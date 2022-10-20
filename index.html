@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sadbot Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Russo+One&display=swap"
@@ -35,16 +35,36 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="pages/categories.html">Categorías</a>
                         <ul>
-                            <li>Acción</li>
-                            <li>Aventuras</li>
-                            <li>Arcade</li>
-                            <li>Carreras</li>
-                            <li>Cartas</li>
-                            <li>Deportes</li>
-                            <li>Estrategia</li>
-                            <li>Mundo Abierto</li>
-                            <li>RPG</li>
-                            <li>Simulación</li>
+                            <a href="./pages/subpages/accion.html">
+                                <li>Acción</li>
+                            </a>
+                            <a href="">
+                                <li>Aventuras</li>
+                            </a>
+                            <a href="">
+                                <li>Arcade</li>
+                            </a>
+                            <a href="">
+                                <li>Carreras</li>
+                            </a>
+                            <a href="">
+                                <li>Cartas</li>
+                            </a>
+                            <a href="">
+                                <li>Deportes</li>
+                            </a>
+                            <a href="">
+                                <li>Estrategia</li>
+                            </a>
+                            <a href="">
+                                <li>Mundo Abierto</li>
+                            </a>
+                            <a href="">
+                                <li>RPG</li>
+                            </a>
+                            <a href="">
+                                <li>Simulación</li>
+                            </a>
                         </ul>
                     </li>
                     <li><a href="pages/requirements.html">Requisitos</a>
@@ -60,84 +80,131 @@
             </nav>
         </header>
 
-        <main class="mainSection">
-            <div>
-                <h2 class="subTitle">Juegos destacados</h2>
+        <main class="mainGrid">
+            <div class="mainTitle">
+                <h2 class="subTitle">JUEGOS DESTACADOS</h2>
             </div>
 
-            <picture>
+            <section class="destacados borderBot">
                 <a href="">
-                    <source media="(min-width: )" srcset="">
-                    <source media="(min-width: )" srcset="">
-                    <img src="assets/mobile pictures/gtav-mobile.jpg" alt="Grand Theft Auto V">
-                    <h3 class="subTitle">Grand Theft Auto V - $3,500</h3>
+                    <picture class="gtavGame">
+                        <source media="(min-width: )" srcset="">
+                        <source media="(min-width: 768px)" srcset="./assets/tablet-pictures/gtav-tablet.jpg">
+                        <img src="./assets/mobile pictures/gtav-mobile.jpg" alt="Grand Theft Auto V">
+                        <h3 class="subTitle">Grand Theft Auto V - $3,500</h3>
+                    </picture>
                 </a>
-            </picture>
 
-            <picture class="imageBorder">
                 <a href="">
-                    <source media="(min-width: )" srcset="">
-                    <source media="(min-width: )" srcset="">
-                    <img src="assets/mobile pictures/fortnite-mobile.jpg" alt="Fortnite">
-                    <h3 class="subTitle">Fortnite - Gratis</h3>
+                    <picture class="fortniteGame">
+                        <source media="(min-width: )" srcset="">
+                        <source media="(min-width: 768px)" srcset="./assets/tablet-pictures/fortnite-tablet.jpg">
+                        <img src="./assets/mobile pictures/fortnite-mobile.jpg" alt="Fortnite">
+                        <h3 class="subTitle">Fortnite - Gratis</h3>
+                    </picture>
                 </a>
-            </picture>
-
-            <div>
-                <h2 class="subTitle">Últimos Lanzamientos</h2>
+            </section>
+            <div class="last">
+                <h2 class="subTitle">ÚLTIMOS LANZAMIENTOS</h2>
             </div>
+            <section class="lastGamesGrid">
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="assets/steelrising.jpg" alt="Steelrising">
+                        <h4 class="subTitle">Steelrising - $2,300</h4>
+                    </a>
+                </picture>
 
-            <picture>
-                <a href="">
-                    <img src="assets/steelrising.jpg" alt="Steelrising">
-                    <h4 class="subTitle">Steelrising - $2,300</h4>
-                </a>
-            </picture>
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="assets/dungeon3.jpeg" alt="Dungeon 3">
+                        <h4 class="subTitle">Dungeon 3 - $2,700</h4>
+                    </a>
+                </picture>
 
-            <picture>
-                <a href="">
-                    <img src="assets/dungeon3.jpeg" alt="Dungeon 3">
-                    <h4 class="subTitle">Dungeon 3 - $2,700</h4>
-                </a>
-            </picture>
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="assets/freedomplanet2.jpg" alt="Freedom Planet 2">
+                        <h4 class="subTitle">Freedom Planet 2 - $2,000</h4>
+                    </a>
+                </picture>
 
-            <picture>
-                <a href="">
-                    <img src="assets/freedomplanet2.jpg" alt="Freedom Planet 2">
-                    <h4 class="subTitle">Freedom Planet 2 - $2,000</h4>
-                </a>
-            </picture>
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="./assets/gta6.jpeg" alt="Grand Theft Auto VI">
+                        <h4 class="subTitle">Grand Theft Auto VI - $5,500</h4>
+                    </a>
+                </picture>
+
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="./assets/metalhellslinger.jpg" alt="Metal: Hellsinger">
+                        <h4 class="subTitle">Metal: Hellsinger - $2,600</h4>
+                    </a>
+                </picture>
+
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="./assets/littleorpheus.jpg" alt="Little Orpheus">
+                        <h4 class="subTitle">Little Orpheus - $1,700</h4>
+                    </a>
+                </picture>
+
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="./assets/lostjudgement.jpg" alt="Lost Judgement">
+                        <h4 class="subTitle">Lost Jugdement - $1,250</h4>
+                    </a>
+                </picture>
+
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="./assets/soulstice.jpg" alt="Soulstice">
+                        <h4 class="subTitle">Soulstice - $1,900</h4>
+                    </a>
+                </picture>
+
+                <picture class="gameHovering">
+                    <a href="">
+                        <img src="./assets/outerwilds.jpg" alt="Outer Wilds">
+                        <h4 class="subTitle">Outer Wilds - $1,400</h4>
+                    </a>
+                </picture>
+            </section>
         </main>
 
         <aside class="asideOffers">
-            <div class="subTitle">
-                <h2 class="subTitle">Juegos en oferta</h2>
+            <div>
+                <h2 class="subTitle">OFERTAS</h2>
             </div>
 
             <picture>
-                <a href="">
+                <a class="gameHovering" href="">
                     <source media="(min-width: )" srcset="">
                     <source media="(min-width: )" srcset="">
-                    <img src="assets/ac4.jpg" alt="Assasin's Creed IV">
-                    <h5 class="subTitle">Assasin's Creed IV: Black Flag - $3,200</h5>
+                    <img src="assets/ac4.jpg" alt="Assasin's Creed IV" height="128" width="128">
+                    <h5 class="subTitle">Assasin's Creed IV: Black Flag</h5>
+                    <p class="gameOffer-1"> - $2,300</p>
                 </a>
             </picture>
 
             <picture>
-                <a href="">
+                <a class="gameHovering" href="">
                     <source media="(min-width: )" srcset="">
                     <source media="(min-width: )" srcset="">
-                    <img src="assets/teso.jpg" alt="The Elder Scrolls Online">
-                    <h5 class="subTitle">The Elder Scrolls Online - $550</h5>
+                    <img src="assets/teso.jpg" alt="The Elder Scrolls Online" height="128" width="128">
+                    <h5 class="subTitle">The Elder Scrolls Online</h5>
+                    <p class="gameOffer-2"> - 500</p>
                 </a>
             </picture>
 
             <picture>
-                <a href="">
+                <a class="gameHovering" href="">
                     <source media="(min-width: )" srcset="">
                     <source media="(min-width: )" srcset="">
-                    <img src="assets/skyrimse.jpg" alt="The Elder Scrolls V: Skyrim">
-                    <h5 class="subTitle">The Elder Scrolls V: Skyrim - $2,600</h5>
+                    <img src="assets/skyrimse.jpg" alt="The Elder Scrolls V: Skyrim" height="128" width="128">
+                    <h5 class="subTitle">The Elder Scrolls V: Skyrim</h5>
+                    <p class="gameOffer-3"> - $2,100</p>
                 </a>
             </picture>
         </aside>
@@ -151,29 +218,17 @@
             </picture>
 
             <div class="miniLogo">
-                <picture>
-                    <a href="">
-                        <source media="(min-width: )" srcset="">
-                        <source media="(min-width: )" srcset="">
-                        <img class="stickyInstagram" src="assets/instagram-logo.png" alt="Instagram">
-                    </a>
-                </picture>
+                <a href="">
+                    <img src="assets/instagram-logo.png" alt="Instagram">
+                </a>
 
-                <picture>
-                    <a href="">
-                        <source media="(min-width: )" srcset="">
-                        <source media="(min-width: )" srcset="">
-                        <img src="assets/whatsapp-logo.png" alt="Whatsapp">
-                    </a>
-                </picture>
+                <a href="">
+                    <img src="assets/whatsapp-logo.png" alt="Whatsapp">
+                </a>
 
-                <picture>
-                    <a href="">
-                        <source media="(min-width: )" srcset="">
-                        <source media="(min-width: )" srcset="">
-                        <img src="assets/facebooklogo.png" alt="Facebook">
-                    </a>
-                </picture>
+                <a href="">
+                    <img src="assets/facebook-logo.png" alt="Facebook">
+                </a>
             </div>
         </footer>
     </div>
