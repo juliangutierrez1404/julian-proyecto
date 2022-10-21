@@ -161,7 +161,7 @@ nav ul li ul li a:hover {
 }
 
 /**Sub-menú**/
-/**Estilos del main mobile**/
+/**Estilos del main index**/
 
 .mainGrid {
     grid-column: 1/2;
@@ -209,7 +209,7 @@ nav ul li ul li a:hover {
     transition: transform 1s 500ms;
 }
 
-/**Estilos del aside**/
+/**Estilos del aside index**/
 
 .asideOffers {
     grid-column: 2/3;
@@ -282,6 +282,156 @@ nav ul li ul li a:hover {
     gap: 10px;
 }
 
+/**Estilos de categorias**/
+
+.categoriasGrid {
+    display: grid;
+    height: 270vh;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "categoriesCol-1 categoriesCol-2"
+    "categoriesCol-1 categoriesCol-2"
+    "categoriesCol-1 categoriesCol-2"
+    "categoriesCol-1 categoriesCol-2"
+    "categoriesCol-1 categoriesCol-2"
+    ;
+}
+
+.categoriesImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Estilos de requisitos**/
+
+.requirementsGrid {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(3,1fr);
+    background-image: linear-gradient(to top, #00217a, #001e6d, #001b60, #001854, #001547, #00133f, #001136, #020d2e, #020b27, #02091f, #010718, #00040f);
+    background-size: 100%;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+}
+
+.reqFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Estilos de iniciar sesión**/
+
+.formGrid {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.formCol-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formCol-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formCol-3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginBtn {
+    padding: 10px 20px 10px 20px;
+    background-color: #b8b000;
+    font-size: 16px;
+}
+
+body main form div input {
+    height: 5vh;
+}
+
+/**Estilos de registrarse**/
+.registerMainGrid {
+    display: grid;
+    height: 130vh;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.registerTitle {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+.registerGrid {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 80%;
+    width: 60%;
+    margin: 100px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 30px;
+}
+
+.loginText {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/**Grilla del formulario**/
+
+.name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.lastName {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.userName {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.password-2 {
+    text-align: center;
+}
+
+.registerBtn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 /**Animaciones**/
 
 @-webkit-keyframes swing-in-top-fwd {
