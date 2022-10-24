@@ -47,10 +47,10 @@ opacity: 1;
 /**Grilla desktop**/
 .containerGrids {
     width: 100%;
-    height: 232vh;
+    height: 234vh;
     display: grid   ;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 28vh 174vh 30vh;
+    grid-template-rows: 28vh 176vh 30vh;
 }
 
 
@@ -107,7 +107,7 @@ nav ul li a {
     color: white;
 }
 
-nav ul li:hover a{
+nav ul li:hover .navHover{
     transform: scale(1.1);
     background-color: #00277c;
 }
@@ -117,12 +117,11 @@ nav li {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    width: 15%;
+    height: 42px;
+    width: 17%;
     background-color: #001136;
     background-size: cover;
     color: white;
-    justify-self: center;
-    padding: 10px;
 }
 
 nav ul ul {
@@ -136,8 +135,11 @@ nav ul ul {
 }
 
 nav ul ul li {
+    background-color: #001136;
     display: block;
+    height: 45px;
     width: 100%;
+    padding-top: 10px;
 }
 
 nav ul li:hover ul {
@@ -149,18 +151,18 @@ nav ul li:hover ul {
 }
 
 nav ul li ul a {
-    display: block;
     color: white;
     text-align: left;
-    font-size: 10px;
+    font-size: 20px;
 }
 
-nav ul li ul li a:hover {
+nav ul li ul a:hover{
     background-color: #00277c;
     color: white;
     transform: scale(1.1);
-    font-size: 10px;
+    font-size: 21px;
 }
+
 
 /**Sub-menú**/
 /**Estilos del main index**/
@@ -208,7 +210,7 @@ nav ul li ul li a:hover {
 }
 
 .gameHovering:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 1s 500ms;
 }
 
@@ -396,18 +398,25 @@ body main form div input {
     grid-column: 2/3;
     grid-row: 2/3;
     height: 80%;
-    width: 60%;
-    margin: 100px;
-    padding: 50px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
     column-gap: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #b8b000;
+    text-align: center;
+    padding: 15px
 }
 
 .loginText {
     grid-column: 2/3;
     grid-row: 3/4;
+}
+
+.loginText a {
+    padding: 3px;
 }
 
 /**Grilla del formulario**/
@@ -434,78 +443,56 @@ body main form div input {
 .registerBtn {
     display: flex;
     justify-content: center;
-    align-self: center;
 }
 
 /**Tablet media querie**/
 @media (max-width: 768px) {
-
-    .containerGrid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 60% 20%;
-        grid-template-areas: 
-        "main"
-        "header"
-        "footer"
-        ;
+    .containerGrids {
+        width: 100%;
+        height: 235vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 32vh 168vh 35vh;
     }
 
-    nav li {
-        position: relative;
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-        font-size: 10px;
-        width: 10%;
-        background-color: #001136;
-        background-size: cover;
-        color: white;
-        justify-self: center;
+    .headerStyles {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        width: 768px;
     }
     
-
-    .asideOffers {
-        display: none;
+    .navBar {
+        background-color: #001136;
+        background-size: cover;
     }
-
-    .destacados {
-        height: 35vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .lastGamesGrid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer {
+    
+    nav ul{
         height: 100%;
+    }
+    
+    .mainGrid {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: 768px;
     }
 
     .noDsp {
         display: none;
     }
-}
 
-@media (max-width: 576px) {
-    .containerGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
-        grid-template-areas: 
-        "header"
-        "main"
-        "main"
-        "main"
-        "main"
-        "footer"
-        ;
+    .gameHovering {
+
+    }
+
+    .asideOffers {
+        display: none;
+    }
+
+    .footer {
+        grid-column: 1/3;
+        grid-row: 3/4;
     }
 }
+
 /**Animaciones**/
 
 @-webkit-keyframes swing-in-top-fwd {
@@ -540,4 +527,3 @@ body main form div input {
       opacity: 1;
     }
   }
-  
