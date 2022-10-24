@@ -18,28 +18,31 @@ body {
 }
 
 @-webkit-keyframes slide-in-fwd-center {
-0% {
--webkit-transform: translateZ(-1400px);
-      transform: translateZ(-1400px);
-opacity: 0;
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
-100% {
--webkit-transform: translateZ(0);
-      transform: translateZ(0);
-opacity: 1;
-}
-}
+
 @keyframes slide-in-fwd-center {
-0% {
--webkit-transform: translateZ(-1400px);
-      transform: translateZ(-1400px);
-opacity: 0;
-}
-100% {
--webkit-transform: translateZ(0);
-      transform: translateZ(0);
-opacity: 1;
-}
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
 
 /**Grillas**/
@@ -48,7 +51,7 @@ opacity: 1;
 .containerGrids {
     width: 100%;
     height: 234vh;
-    display: grid   ;
+    display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 28vh 176vh 30vh;
 }
@@ -79,6 +82,7 @@ opacity: 1;
 .headerTitle {
     font-family: 'Russo One', sans-serif;
     font-size: 50px;
+    width: 100%;
 }
 
 .navBar {
@@ -87,11 +91,11 @@ opacity: 1;
     padding: 8px 8px 8px 8px;
 }
 
-.navBar a{
+.navBar a {
     color: #f8f8f8;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     height: 100%;
     font-size: 0;
@@ -103,11 +107,12 @@ nav ul li a {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: white;
 }
 
-nav ul li:hover .navHover{
+nav ul li:hover .navHover {
     transform: scale(1.1);
     background-color: #00277c;
 }
@@ -146,8 +151,8 @@ nav ul li:hover ul {
     display: block;
     visibility: visible;
     opacity: 1;
-	-webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-	        animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
 nav ul li ul a {
@@ -156,7 +161,7 @@ nav ul li ul a {
     font-size: 20px;
 }
 
-nav ul li ul a:hover{
+nav ul li ul a:hover {
     background-color: #00277c;
     color: white;
     transform: scale(1.1);
@@ -168,6 +173,7 @@ nav ul li ul a:hover{
 /**Estilos del main index**/
 
 .mainGrid {
+    width: 100%;
     grid-area: main;
     grid-column: 1/2;
     grid-row: 2/3;
@@ -223,6 +229,7 @@ nav ul li ul a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
 }
 
 .asideOffers a {
@@ -237,7 +244,7 @@ nav ul li ul a:hover{
     color: #f8f8f8;
 }
 
-.asideOffers picture a p{
+.asideOffers picture a p {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
@@ -267,6 +274,7 @@ nav ul li ul a:hover{
 /**Estilos del footer**/
 
 .footer {
+    width: 100%;
     grid-area: footer;
     grid-column: 1/3;
     grid-row: 3/4;
@@ -276,9 +284,13 @@ nav ul li ul a:hover{
 .logoTitle {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: #f8f8f8;
+}
+
+.logoTitle h2 {
+    width: 370px;
 }
 
 .miniLogo {
@@ -293,14 +305,14 @@ nav ul li ul a:hover{
 .categoriasGrid {
     display: grid;
     height: 270vh;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
-    "categoriesCol-1 categoriesCol-2"
-    "categoriesCol-1 categoriesCol-2"
-    "categoriesCol-1 categoriesCol-2"
-    "categoriesCol-1 categoriesCol-2"
-    "categoriesCol-1 categoriesCol-2"
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "categoriesCol-1 categoriesCol-2"
+        "categoriesCol-1 categoriesCol-2"
+        "categoriesCol-1 categoriesCol-2"
+        "categoriesCol-1 categoriesCol-2"
+        "categoriesCol-1 categoriesCol-2"
     ;
 }
 
@@ -318,13 +330,13 @@ nav ul li ul a:hover{
     width: 100%;
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-image: linear-gradient(to top, #00217a, #001e6d, #001b60, #001854, #001547, #00133f, #001136, #020d2e, #020b27, #02091f, #010718, #00040f);
     background-size: 100%;
-    grid-template-areas: 
-    "header header"
-    "main aside"
-    "footer footer"
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer"
     ;
 }
 
@@ -341,8 +353,8 @@ nav ul li ul a:hover{
     height: 50vh;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .formCol-1 {
@@ -384,8 +396,8 @@ body main form div input {
     display: grid;
     height: 130vh;
     width: 100%;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .registerTitle {
@@ -400,8 +412,8 @@ body main form div input {
     height: 80%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 30px;
     border-width: 5px;
     border-style: solid;
@@ -445,42 +457,55 @@ body main form div input {
     justify-content: center;
 }
 
-/**Tablet media querie**/
+/**Tablet, index media querie**/
 @media (max-width: 768px) {
     .containerGrids {
         width: 100%;
-        height: 235vh;
+        height: 217vh;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 32vh 168vh 35vh;
+        grid-template-rows: 32vh 145vh 40vh;
     }
 
     .headerStyles {
         grid-column: 1/3;
         grid-row: 1/2;
-        width: 768px;
+        width: 100%;
     }
-    
+
     .navBar {
         background-color: #001136;
         background-size: cover;
     }
-    
-    nav ul{
+
+    nav ul {
         height: 100%;
     }
-    
+
     .mainGrid {
         grid-column: 1/3;
         grid-row: 2/3;
-        width: 768px;
+    }
+
+    .destacados h3 {
+        font-size: 15px;
+    }
+
+    .destacados img {
+        width: 350px;
+        height: 197px;
+    }
+
+    .lastGamesGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        margin: 0px 0px 0px 0px;
     }
 
     .noDsp {
         display: none;
-    }
-
-    .gameHovering {
-
     }
 
     .asideOffers {
@@ -491,39 +516,50 @@ body main form div input {
         grid-column: 1/3;
         grid-row: 3/4;
     }
+
+    /**Tablet, categorias media queries**/
+
+    .categoriasGrid {
+        height: 195vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
 }
+    /**Animaciones**/
 
-/**Animaciones**/
+    @-webkit-keyframes swing-in-top-fwd {
+        0% {
+            -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+            -webkit-transform-origin: top;
+            transform-origin: top;
+            opacity: 0;
+        }
 
-@-webkit-keyframes swing-in-top-fwd {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
+        100% {
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: top;
+            transform-origin: top;
+            opacity: 1;
+        }
     }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
+
+    @keyframes swing-in-top-fwd {
+        0% {
+            -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+            -webkit-transform-origin: top;
+            transform-origin: top;
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: top;
+            transform-origin: top;
+            opacity: 1;
+        }
     }
-  }
-  @keyframes swing-in-top-fwd {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
-    }
-  }
