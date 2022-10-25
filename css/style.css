@@ -45,9 +45,8 @@ body {
     }
 }
 
-/**Grillas**/
+/**Grids desktop**/
 
-/**Grilla desktop**/
 .containerGrids {
     width: 100%;
     height: 234vh;
@@ -57,7 +56,7 @@ body {
 }
 
 
-/**Estilos del header**/
+/**Estilos de header**/
 
 .headerStyles {
     grid-area: header;
@@ -85,91 +84,91 @@ body {
     width: 100%;
 }
 
-.navBar {
-    background-color: #001136;
-    background-size: cover;
-    padding: 8px 8px 8px 8px;
+@media (min-width: 768px) {
+    .navBar {
+        background-color: #001136;
+        background-size: cover;
+        padding: 8px 8px 8px 8px;
+    }
+    
+    .navBar a {
+        color: #f8f8f8;
+    }
+    
+    nav ul {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    nav ul li:hover .navHover {
+        transform: scale(1.1);
+        background-color: #00277c;
+    }
+    
+    nav li {
+        position: relative;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        height: 42px;
+        width: 17%;
+        background-color: #001136;
+        background-size: cover;
+        color: white;
+    }
+    
+    nav ul ul {
+        width: 150px;
+        background-color: #00277c;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 5;
+        text-align: center;
+    }
+    
+    nav ul ul li {
+        background-color: #001136;
+        display: block;
+        height: 45px;
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+        animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    }
+    
+    nav ul li ul a {
+        color: white;
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    nav ul li ul a:hover {
+        background-color: #00277c;
+        color: white;
+        transform: scale(1.1);
+        font-size: 21px;
+    }
 }
 
-.navBar a {
-    color: #f8f8f8;
-}
-
-nav ul {
-    width: 100%;
-    height: 100%;
-    font-size: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-nav ul li:hover .navHover {
-    transform: scale(1.1);
-    background-color: #00277c;
-}
-
-nav li {
-    position: relative;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    height: 42px;
-    width: 17%;
-    background-color: #001136;
-    background-size: cover;
-    color: white;
-}
-
-nav ul ul {
-    width: 150px;
-    background-color: #00277c;
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 5;
-    text-align: center;
-}
-
-nav ul ul li {
-    background-color: #001136;
-    display: block;
-    height: 45px;
-    width: 100%;
-    padding-top: 10px;
-}
-
-nav ul li:hover ul {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-    animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-}
-
-nav ul li ul a {
-    color: white;
-    text-align: left;
-    font-size: 20px;
-}
-
-nav ul li ul a:hover {
-    background-color: #00277c;
-    color: white;
-    transform: scale(1.1);
-    font-size: 21px;
-}
-
-
-/**Sub-menú**/
 /**Estilos del main index**/
 
 .mainGrid {
@@ -220,7 +219,7 @@ nav ul li ul a:hover {
     transition: transform 1s 500ms;
 }
 
-/**Estilos del aside index**/
+/**Estilos de Aside**/
 
 .asideOffers {
     grid-column: 2/3;
@@ -251,21 +250,21 @@ nav ul li ul a:hover {
 }
 
 .gameOffer-1::before {
-    content: "$3,000 -";
+    content: "$3,000 ";
     font-family: 'Roboto', sans-serif;
     text-decoration: line-through;
     color: grey;
 }
 
 .gameOffer-2::before {
-    content: "$920 -";
+    content: "$920";
     font-family: 'Roboto', sans-serif;
     text-decoration: line-through;
     color: grey;
 }
 
 .gameOffer-3::before {
-    content: "$2,700 -";
+    content: "$2,700";
     font-family: 'Roboto', sans-serif;
     text-decoration: line-through;
     color: grey;
@@ -301,7 +300,6 @@ nav ul li ul a:hover {
 }
 
 /**Estilos de categorias**/
-
 .categoriasGrid {
     display: grid;
     height: 270vh;
@@ -392,6 +390,7 @@ body main form div input {
 }
 
 /**Estilos de registrarse**/
+
 .registerMainGrid {
     display: grid;
     height: 130vh;
@@ -475,10 +474,58 @@ body main form div input {
     .navBar {
         background-color: #001136;
         background-size: cover;
+        padding: 8px 8px 8px 8px;
+    }
+    
+    .navBar a {
+        color: #f8f8f8;
+    }
+    
+    nav ul {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
 
-    nav ul {
-        height: 100%;
+    nav li {
+        position: relative;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        height: 42px;
+        width: 17%;
+        background-color: #001136;
+        background-size: cover;
+        color: white;
+    }
+    
+    nav ul ul {
+        width: 150px;
+        background-color: #00277c;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 5;
+        text-align: center;
+    }
+    
+    nav ul ul li {
+        background-color: #001136;
+        display: block;
+        height: 45px;
+        width: 100%;
+        padding-top: 10px;
     }
 
     .mainGrid {
@@ -517,14 +564,129 @@ body main form div input {
         grid-row: 3/4;
     }
 
-    /**Tablet, categorias media queries**/
+    /**Estilos de categorias. Tablet**/
 
     .categoriasGrid {
         height: 195vh;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
     }
 
+    .categoriesTitle {
+        font-size: 22px;
+    }
+
+    .categoriesImg picture img {
+        width: 300px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerGrids {
+        height: 367vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 32vh 300vh 35vh;
+    }
+
+    .navBar {
+        background-color: #001136;
+        background-size: cover;
+        padding: 8px 8px 8px 8px;
+    }
+    
+    .navBar a {
+        color: #f8f8f8;
+    }
+    
+    nav ul {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    nav li {
+        position: relative;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        height: 42px;
+        width: 17%;
+        background-color: #001136;
+        background-size: cover;
+        color: white;
+    }
+    
+    nav ul ul {
+        width: 150px;
+        background-color: #00277c;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 5;
+        text-align: center;
+    }
+    
+    nav ul ul li {
+        background-color: #001136;
+        display: block;
+        height: 45px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .destacados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destacados img {
+        width: 406px;
+        height: 229px;
+    }
+
+    .lastGamesGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lastGamesGrid img{
+        width: 364px;
+        height: 205px;
+    }
+
+    .miniLogo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    /**Estilos de categorias. Mobile**/
+
+    .categoriasGrid {
+        height: 145vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categoriesTitle {
+        font-size: 20px;
+    }
+
+    .categoriesImg picture img {
+        width: 204px;
+        height: 122px;
+    }
 }
     /**Animaciones**/
 
