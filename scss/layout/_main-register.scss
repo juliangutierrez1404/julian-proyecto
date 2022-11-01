@@ -1,0 +1,24 @@
+.registerTitle {
+    padding: 10px;
+    h2 {
+        @include titles(25px, auto);
+        color: white;
+        text-align: center;
+    }
+}
+
+.formLabel {
+    width: 95%;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    label {
+        color: white;
+    }
+    .loginBtn {
+        p {
+            @include normaltext(15px, auto, auto);
+            color: white;
+            text-align: center;
+        }
+    }
+}

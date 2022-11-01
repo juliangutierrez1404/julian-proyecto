@@ -1,0 +1,27 @@
+footer {
+    background: rgb(60,60,60);
+    background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(36,36,36,1) 50%, rgba(24,24,24,1) 100%);
+
+    .logoTitle {
+        @include flex(row, center, center);
+
+        h2 {
+            @include titles(45px, auto);
+            color: white;
+        }
+    }
+
+    .miniLogo {
+        @include flex(row, center, center);
+        gap: 30px;
+        padding-bottom: 10px;
+        picture{
+            img{
+                &:hover{
+                    transform: scale(1.2);
+                    transition: transform 1s 600ms;
+                }
+            }
+        }
+    }
+}

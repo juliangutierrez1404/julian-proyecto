@@ -1,0 +1,34 @@
+@mixin anchors($textDec, $color) {
+    text-decoration: $textDec;
+    color: $color;    
+}
+
+@mixin grids($rows, $columns) {
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin titles($fontsize, $width) {
+    font-family: 'Russo One', sans-serif;
+    font-size: $fontsize;
+    width: $width;
+}
+
+@mixin normaltext($fontsize, $height, $width) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $fontsize;
+    height: $height;
+    width: $width;
+}
+
+@mixin textColor($color) {
+    color: $color;
+}

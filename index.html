@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra juegos de manera segura, la mejor pagina donde aceptamos todo tipo de divisas">
     <title>Sadbot Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Russo+One&display=swap"
@@ -14,21 +16,21 @@
 </head>
 
 <body>
-    <div class="containerGrids">
-        <header class="headerStyles">
+    <div class="row gx-0">
+        <header class="headerStyles col-sm-12 col-md-12 col-lg-12">
 
             <!--Logo y titulo-->
 
-            <picture class="logo">
+            <picture class="user-select-none">
                 <img src="./assets/logo.png" alt="Sadbot Games">
                 <a href="index.html">
-                    <h1 class="headerTitle">Sadbot Games</h1>
+                    <h1>Sadbot Games</h1>
                 </a>
             </picture>
 
             <!--Navegador-->
 
-            <nav class="navBar">
+            <nav class="navBar shadow">
                 <ul>
                     <li><a class="navHover" href="index.html">Inicio</a></li>
                     <li><a class="navHover" href="./pages/categories.html">Categorías</a>
@@ -58,7 +60,7 @@
             </nav>
         </header>
 
-        <main class="mainGrid">
+        <main class="col-sm-12 col-md-12 col-lg-10">
 
             <!--Sección destacados-->
 
@@ -66,18 +68,18 @@
                 <h2 class="subTitle">JUEGOS DESTACADOS</h2>
             </div>
 
-            <section class="destacados borderBot">
+            <section class="destacados">
                     <picture class="gameHovering">
                         <a href="">
-                            <img src="./assets/Gtav.jpg" alt="Grand Theft Auto V">
-                            <h3 class="subTitle">Grand Theft Auto V - $3,500</h3>
+                            <img class="rounded" src="./assets/Gtav.jpg" alt="Grand Theft Auto V">
+                            <h3>Grand Theft Auto V - $3,500</h3>
                         </a>
                     </picture>
 
                     <picture class="gameHovering">
                         <a href="">
-                            <img src="./assets/Fortnite.jpg" alt="Fortnite">
-                            <h3 class="subTitle">Fortnite - Gratis</h3>
+                            <img class="rounded" src="./assets/Fortnite.jpg" alt="Fortnite">
+                            <h3>Fortnite - Gratis</h3>
                         </a>
                     </picture>
             </section>
@@ -87,67 +89,67 @@
             <div class="last">
                 <h2 class="subTitle">ÚLTIMOS LANZAMIENTOS</h2>
             </div>
-            <section class="lastGamesGrid">
+            <section class="flexImg">
                 <picture class="gameHovering">
                     <a href="">
-                        <img src="assets/steelrising.jpg" alt="Steelrising">
-                        <h4 class="subTitle">Steelrising - $2,300</h4>
-                    </a>
-                </picture>
-
-                <picture class="gameHovering">
-                    <a href="">
-                        <img src="assets/dungeon3.jpeg" alt="Dungeon 3">
-                        <h4 class="subTitle">Dungeon 3 - $2,700</h4>
+                        <img class="rounded" src="assets/steelrising.jpg" alt="Steelrising">
+                        <h4>Steelrising - $2,300</h4>
                     </a>
                 </picture>
 
                 <picture class="gameHovering">
                     <a href="">
-                        <img src="assets/freedomplanet2.jpg" alt="Freedom Planet 2">
-                        <h4 class="subTitle">Freedom Planet 2 - $2,000</h4>
+                        <img class="rounded" src="assets/dungeon3.jpeg" alt="Dungeon 3">
+                        <h4>Dungeon 3 - $2,700</h4>
                     </a>
                 </picture>
 
                 <picture class="gameHovering">
                     <a href="">
-                        <img src="./assets/gta6.jpeg" alt="Grand Theft Auto VI">
-                        <h4 class="subTitle">Grand Theft Auto VI - $5,500</h4>
+                        <img class="rounded" src="assets/freedomplanet2.jpg" alt="Freedom Planet 2">
+                        <h4>Freedom Planet 2 - $2,000</h4>
                     </a>
                 </picture>
 
-                <picture class="gameHovering noDsp">
+                <picture class="gameHovering">
                     <a href="">
-                        <img src="./assets/metalhellslinger.jpg" alt="Metal: Hellsinger">
-                        <h4 class="subTitle">Metal: Hellsinger - $2,600</h4>
+                        <img class="rounded" src="./assets/gta6.jpeg" alt="Grand Theft Auto VI">
+                        <h4>Grand Theft Auto VI - $5,500</h4>
                     </a>
                 </picture>
 
-                <picture class="gameHovering noDsp">
+                <picture class="gameHovering d-none d-sm-block d-sm-none d-md-block">
                     <a href="">
-                        <img src="./assets/littleorpheus.jpg" alt="Little Orpheus">
-                        <h4 class="subTitle">Little Orpheus - $1,700</h4>
+                        <img class="rounded" src="./assets/metalhellslinger.jpg" alt="Metal: Hellsinger">
+                        <h4>Metal: Hellsinger - $2,600</h4>
                     </a>
                 </picture>
 
-                <picture class="gameHovering noDsp">
+                <picture class="gameHovering d-none d-sm-block d-sm-none d-md-block">
                     <a href="">
-                        <img src="./assets/lostjudgement.jpg" alt="Lost Judgement">
-                        <h4 class="subTitle">Lost Jugdement - $1,250</h4>
+                        <img class="rounded" src="./assets/littleorpheus.jpg" alt="Little Orpheus">
+                        <h4>Little Orpheus - $1,700</h4>
                     </a>
                 </picture>
 
-                <picture class="gameHovering noDsp">
+                <picture class="gameHovering d-none d-sm-block d-sm-none d-md-block">
                     <a href="">
-                        <img src="./assets/soulstice.jpg" alt="Soulstice">
-                        <h4 class="subTitle">Soulstice - $1,900</h4>
+                        <img class="rounded" src="./assets/lostjudgement.jpg" alt="Lost Judgement">
+                        <h4>Lost Jugdement - $1,250</h4>
                     </a>
                 </picture>
 
-                <picture class="gameHovering noDsp">
+                <picture class="gameHovering d-none d-sm-block d-sm-none d-md-block">
                     <a href="">
-                        <img src="./assets/outerwilds.jpg" alt="Outer Wilds">
-                        <h4 class="subTitle">Outer Wilds - $1,400</h4>
+                        <img class="rounded" src="./assets/soulstice.jpg" alt="Soulstice">
+                        <h4>Soulstice - $1,900</h4>
+                    </a>
+                </picture>
+
+                <picture class="gameHovering d-none d-sm-block d-sm-none d-md-block">
+                    <a href="">
+                        <img class="rounded" src="./assets/outerwilds.jpg" alt="Outer Wilds">
+                        <h4>Outer Wilds - $1,400</h4>
                     </a>
                 </picture>
             </section>
@@ -155,65 +157,82 @@
 
         <!--Sección de ofertas (Aside)-->
 
-        <aside class="asideOffers">
+        <aside class="asideOffers col-lg-2 d-none d-lg-block">
             <div>
-                <h2 class="subTitle">OFERTAS</h2>
+                <h2>OFERTAS</h2>
             </div>
 
             <picture>
-                <a class="gameHovering" href="">
-                    <img src="assets/ac4.jpg" alt="Assasin's Creed IV" height="128" width="128">
-                    <h5 class="subTitle">Assasin's Creed IV: Black Flag</h5>
+                <a href="">
+                    <img class="rounded" src="./assets/ac4.jpg" alt="Assasin's Creed IV">
+                    <h5>Assasin's Creed IV: Black Flag</h5>
                     <p class="gameOffer-1">-$2,300</p>
                 </a>
             </picture>
 
             <picture>
-                <a class="gameHovering" href="">
-                    <img src="assets/teso.jpg" alt="The Elder Scrolls Online" height="128" width="128">
-                    <h5 class="subTitle">The Elder Scrolls Online</h5>
+                <a href="">
+                    <img class="rounded" src="./assets/teso.jpg" alt="The Elder Scrolls Online">
+                    <h5>The Elder Scrolls Online</h5>
                     <p class="gameOffer-2">-$500</p>
                 </a>
             </picture>
 
             <picture>
-                <a class="gameHovering" href="">
-                    <img src="assets/skyrimse.jpg" alt="The Elder Scrolls V: Skyrim" height="128" width="128">
-                    <h5 class="subTitle">The Elder Scrolls V: Skyrim</h5>
+                <a href="">
+                    <img class="rounded" src="./assets/skyrimse.jpg" alt="The Elder Scrolls V: Skyrim">
+                    <h5>The Elder Scrolls V: Skyrim</h5>
                     <p class="gameOffer-3">-$2,100</p>
+                </a>
+            </picture>
+
+            <picture>
+                <a href="">
+                    <img class="rounded" src="./assets/destiny2.jpg" alt="Destiny 2">
+                    <h5>Destiny 2</h5>
+                    <p class="gameOffer-4">-$3,000</p>
                 </a>
             </picture>
         </aside>
 
         <!--Pie de la pagina (Footer)-->
 
-        <footer class="footer">
-            <picture class="logoTitle">
+        <footer class="col-sm-12 col-md-12 col-lg-12">
+            <picture class="logoTitle user-select-none">
                 <img src="./assets/logo.png" alt="Sadbot Games">
                 <h2 class="headerTitle">Sadbot Games</h2>
             </picture>
 
-            <div class="miniLogo">
+            <div class="miniLogo user-select-none">
                 <picture>
-                    <a href="">
-                        <img src="assets/instagram-logo.png" alt="Instagram">
+                    <a href="https://www.instagram.com/">
+                        <img src="./assets/instagram-logo.png" alt="Ir a Instagram">
                     </a>
                 </picture>
 
                 <picture>
-                    <a href="">
-                        <img src="assets/whatsapp-logo.png" alt="Whatsapp">
+                    <a href="https://web.whatsapp.com/">
+                        <img src="./assets/whatsapp-logo.png" alt="Ir a Whatsapp">
                     </a>
                 </picture>
 
                 <picture>
-                    <a href="">
-                        <img src="assets/facebook-logo.png" alt="Facebook">
+                    <a href="https://www.facebook.com/">
+                        <img src="./assets/facebook-logo.png" alt="Ir a Facebook">
+                    </a>
+                </picture>
+
+                <picture>
+                    <a href="https://mail.google.com/">
+                        <img src="./assets/email-logo.png" alt="Ir a Email">
                     </a>
                 </picture>
             </div>
         </footer>
     </div>
+    <!--Script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 
 </html>

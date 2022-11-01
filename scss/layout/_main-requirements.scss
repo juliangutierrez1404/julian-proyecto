@@ -1,0 +1,14 @@
+.requirementsTitle {
+    padding: 10px;
+    h3 {
+        @include titles(25px, auto);
+        color: white;
+        text-align: center;
+    }
+}
+
+.imgLabel {
+    h5 {
+        @include titles(25px, auto);
+    }
+}

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadbot Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Russo+One&display=swap"
@@ -18,10 +20,10 @@
 
         <!--Logo y titulo-->
 
-        <picture class="logo">
+        <picture class="user-select-none">
             <img src="../assets/logo.png" alt="Sadbot Games">
-            <a href="../index.html">
-                <h1 class="headerTitle">Sadbot Games</h1>
+            <a href="index.html">
+                <h1>Sadbot Games</h1>
             </a>
         </picture>
 
@@ -60,48 +62,70 @@
     <!--Formulario-->
 
     <main>
-        <div>
+        <div class="loginTitle">
             <h4 class="subTitle">Ingrese en su cuenta para comprar juegos</h4>
         </div>
-        <form>
-            <div class="formGrid">
-                <div class="formCol-1">
-                    <h4 class="subTitle">Correo electrónico</h4>
-                    <input type="text" name="email" placeholder="Introduzca su correo">
-                </div>
-                <div class="formCol-2">
-                    <h4 class="subTitle">Contraseña</h4>
-                    <input type="text" name="contraseña" placeholder="Introduzca su contraseña">
-                </div>
-                <div class="formCol-3">
-                    <h5 class="subTitle">No soy un robot</h5>
-                    <input type="checkbox" name="captcha">
-                    <button class="loginBtn">Ingresar</button>
-                </div>
+        <form class="flexForm">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Ingrese su email</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Ingrese su contraseña</label>
+            </div>
+            <button type="submit" class="btn btn-success">Iniciar sesión</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label loginBtnLabel" for="flexCheckDefault">Recuérdame</label>
+            </div>
+            <div class="registerBtn">
+                <p>Si no tienes una cuenta regístrate haciendo click en el botón de abajo.</p>
+                <a class="btn btn-success" href="./registro.html" role="button">Registrarse</a>
             </div>
         </form>
     </main>
 
     <!--Pie de la pagina (Footer)-->
 
-    <footer class="footer">
-        <picture class="logoTitle">
+    <footer class="col-sm-12 col-md-12 col-lg-12">
+        <picture class="logoTitle user-select-none">
             <img src="../assets/logo.png" alt="Sadbot Games">
             <h2 class="headerTitle">Sadbot Games</h2>
         </picture>
 
-        <div class="miniLogo">
-            <a href="">
-                <img src="../assets/instagram-logo.png" alt="Instagram">
-            </a>
+        <div class="miniLogo user-select-none">
+            <picture>
+                <a href="https://www.instagram.com/">
+                    <img src="../assets/instagram-logo.png" alt="Ir a Instagram">
+                </a>
+            </picture>
 
-            <a href="">
-                <img src="../assets/whatsapp-logo.png" alt="Whatsapp">
-            </a>
+            <picture>
+                <a href="https://web.whatsapp.com/">
+                    <img src="../assets/whatsapp-logo.png" alt="Ir a Whatsapp">
+                </a>
+            </picture>
 
-            <a href="">
-                <img src="../assets/facebook-logo.png" alt="Facebook">
-            </a>
+            <picture>
+                <a href="https://www.facebook.com/">
+                    <img src="../assets/facebook-logo.png" alt="Ir a Facebook">
+                </a>
+            </picture>
+
+            <picture>
+                <a href="https://mail.google.com/">
+                    <img src="../assets/email-logo.png" alt="Ir a Email">
+                </a>
+            </picture>
         </div>
     </footer>
+
+    <!--Script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 </body>

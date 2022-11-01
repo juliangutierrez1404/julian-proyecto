@@ -1,0 +1,58 @@
+.row {
+    padding: 0px;
+}
+
+.mainTitle {
+    padding-top: 10px;
+    .subTitle {
+        @include titles(25px, 100%);
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.destacados {
+    @include flex(row, space-evenly, center);
+    border-bottom: 3px solid gray;
+    padding-bottom: 10px;
+
+    .gameHovering:hover {
+        transform: scale(1.06);
+        transition: transform 1s 500ms;
+    }
+
+    h3{
+        @include normaltext(20px, 20px, 100%);
+        text-align: center;
+    }
+}
+
+.last {
+    padding: 15px 15px;
+    .subTitle { 
+        @include titles(25px, 100%);
+        color: white;
+        @include flex(row, center, center);
+    }
+}
+
+.flexImg {
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    gap: 5px;
+
+    picture {
+        padding-bottom: 10px;
+
+        h4{
+            @include normaltext(18px, 20px, 100%);
+            text-align: center;
+            padding-top: 6px;
+        }
+        &:hover {
+            transform: scale(1.04);
+            transition: transform 1s 500ms;
+        }
+    }
+}

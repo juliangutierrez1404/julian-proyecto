@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra juegos de manera segura, la mejor pagina donde aceptamos todo tipo de divisas">
     <title>Sadbot Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Russo+One&display=swap"
@@ -14,15 +16,15 @@
 </head>
 
 <body>
-    <div class="requirementsGrid">
-        <header class="headerStyles">
+    <div class="row gx-0">
+        <header class="headerStyles col-sm-12 col-md-12 col-lg-12">
 
             <!--Logo y titulo-->
 
-            <picture class="logo">
+            <picture class="user-select-none">
                 <img src="../assets/logo.png" alt="Sadbot Games">
-                <a href="../index.html">
-                    <h1 class="headerTitle">Sadbot Games</h1>
+                <a href="index.html">
+                    <h1>Sadbot Games</h1>
                 </a>
             </picture>
 
@@ -60,86 +62,121 @@
 
         <!--Sección de selección de requisitos de pc-->
         
-        <main>
-            <div>
-                <h3 class="subTitle">ENCUENTRA JUEGOS SEGUN TU PC</h3>
+        <main class="col-sm-12 col-md-12 col-lg-10">
+            <div class="requirementsTitle">
+                <h3>ENCUENTRA JUEGOS SEGUN TU PC</h3>
             </div>
 
-            <section class="reqFlex">
-                <a href="">
-                    <picture>
-                        <img class="gameHovering" src="../assets/bajosreq.jpg" alt="Requisitos bajos">
-                        <h4 class="subTitle">Requisitos bajos</h4>
-                    </picture>
-                </a>
-                <a href="">
-                    <picture>
-                        <img class="gameHovering" src="../assets/mediosreq.jpg" alt="Requisitos medios" width="700" height="400">
-                        <h4 class="subTitle">Requisitos medios</h4>
-                    </picture>
-                </a>
-                <a href="">
-                    <picture>
-                        <img class="gameHovering" src="../assets/altosreq.jpg" alt="Requisitos altos">
-                        <h4 class="subTitle">Requisitos altos</h4>
-                    </picture>
-                </a>
-            </section>
+            <div class="flexCarousel">
+                <div id="carouselExampleCaptions" class="carousel slide carouselWidth" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/altosreq.jpg" class="d-block w-100" alt="Juegos de altos requisitos">
+                        <div class="carousel-caption d-none d-md-block imgLabel">
+                          <h5>Altos requisitos</h5>
+                          <p>Juegos para computadoras de gama alta (Graficos altos)</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/mediosreq.jpg" class="d-block w-100" alt="Juegos de medios requisitos">
+                        <div class="carousel-caption d-none d-md-block imgLabel">
+                          <h5>Medios requisitos</h5>
+                          <p>Juegos para computadoras intermedias (Graficos medios)</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/bajosreq.jpg" class="d-block w-100" alt="Juegos de bajos requisitos">
+                        <div class="carousel-caption d-none d-md-block imgLabel">
+                          <h5>Bajos requisitos</h5>
+                          <p>Juegos para computadoras de gama baja (Graficos bajos)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </main>
 
         <!--Sección de ofertas (Aside)-->
 
-        <aside class="asideOffers">
+        <aside class="asideOffers col-lg-2 d-none d-lg-block">
             <div>
-                <h2 class="subTitle">OFERTAS</h2>
+                <h2>OFERTAS</h2>
             </div>
 
             <picture>
                 <a href="">
-                    <img src="../assets/ac4.jpg" alt="Assasin's Creed IV" height="128" width="128">
-                    <h5 class="subTitle">Assasin's Creed IV: Black Flag</h5>
-                    <p class="gameOffer-1"> - $2,300</p>
+                    <img class="rounded" src="../assets/ac4.jpg" alt="Assasin's Creed IV">
+                    <h5>Assasin's Creed IV: Black Flag</h5>
+                    <p class="gameOffer-1">-$2,300</p>
                 </a>
             </picture>
 
             <picture>
                 <a href="">
-                    <img src="../assets/teso.jpg" alt="The Elder Scrolls Online" height="128" width="128">
-                    <h5 class="subTitle">The Elder Scrolls Online</h5>
-                    <p class="gameOffer-2"> - 500</p>
+                    <img class="rounded" src="../assets/teso.jpg" alt="The Elder Scrolls Online">
+                    <h5>The Elder Scrolls Online</h5>
+                    <p class="gameOffer-2">-$500</p>
                 </a>
             </picture>
 
             <picture>
                 <a href="">
-                    <img src="../assets/skyrimse.jpg" alt="The Elder Scrolls V: Skyrim" height="128" width="128">
-                    <h5 class="subTitle">The Elder Scrolls V: Skyrim</h5>
-                    <p class="gameOffer-3"> - $2,100</p>
+                    <img class="rounded" src="../assets/skyrimse.jpg" alt="The Elder Scrolls V: Skyrim">
+                    <h5>The Elder Scrolls V: Skyrim</h5>
+                    <p class="gameOffer-3">-$2,100</p>
                 </a>
             </picture>
         </aside>
 
         <!--Pie de la pagina (Footer)-->
 
-        <footer class="footer">
-            <picture class="logoTitle">
+        <footer class="col-sm-12 col-md-12 col-lg-12">
+            <picture class="logoTitle user-select-none">
                 <img src="../assets/logo.png" alt="Sadbot Games">
                 <h2 class="headerTitle">Sadbot Games</h2>
             </picture>
 
-            <div class="miniLogo">
-                <a href="">
-                    <img src="../assets/instagram-logo.png" alt="Instagram">
-                </a>
+            <div class="miniLogo user-select-none">
+                <picture>
+                    <a href="https://www.instagram.com/">
+                        <img src="../assets/instagram-logo.png" alt="Ir a Instagram">
+                    </a>
+                </picture>
 
-                <a href="">
-                    <img src="../assets/whatsapp-logo.png" alt="Whatsapp">
-                </a>
+                <picture>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="../assets/whatsapp-logo.png" alt="Ir a Whatsapp">
+                    </a>
+                </picture>
 
-                <a href="">
-                    <img src="../assets/facebook-logo.png" alt="Facebook">
-                </a>
+                <picture>
+                    <a href="https://www.facebook.com/">
+                        <img src="../assets/facebook-logo.png" alt="Ir a Facebook">
+                    </a>
+                </picture>
+
+                <picture>
+                    <a href="https://mail.google.com/">
+                        <img src="../assets/email-logo.png" alt="Ir a Email">
+                    </a>
+                </picture>
             </div>
         </footer>
     </div>
+        <!--Script de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,27 @@
+.loginTitle {
+    padding: 10px;
+    @include titles(25px, auto);
+    color: white;
+    text-align: center;
+}
+
+.flexForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    .loginBtnLabel {
+        color: white;
+    }
+    .registerBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            @include normaltext(20px, auto, auto);
+            color: white;
+        }
+    }
+}
