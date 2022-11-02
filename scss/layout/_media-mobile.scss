@@ -1,0 +1,54 @@
+@media (max-width: 576px){
+
+    /**Header mobile**/
+    
+    nav {
+        background-color: rgb(60,60,60);
+        background-size: cover;
+        ul {
+            width: 100%;
+            height: 15px;
+            @include flex(row, center, flex-start);
+            list-style: none;
+            li{
+                position: relative;
+                display: inline-block;
+                @include titles(14px, 18%);
+                height: 25px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    @include flex(row, center, center);
+                    color: white;
+                }
+            }
+            ul {
+                width: 150px;
+                background-color: rgb(60,60,60);
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 5;
+                text-align: center;
+                li {
+                    background-color: rgb(60,60,60);
+                    display: block;
+                    height: 40px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .destacados {
+        img {
+            width: 270px;
+            height: 152px;
+        }
+        
+        h3 {
+            @include normaltext(15px, auto, 100%);
+            padding-top: 4px;
+        }
+    }
+}

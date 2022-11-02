@@ -56,3 +56,20 @@
         }
     }
 }
+
+.flexNav {
+    padding-top: 20px;
+    ul {
+        @include flex (row, center, center);
+        list-style: none;
+
+        li{
+            padding: 3px 20px 3px 20px;
+            background-color: rgb(60,60,60);
+            
+            a{
+                color: rgb(197, 197, 197);
+            }
+        }
+    }
+}

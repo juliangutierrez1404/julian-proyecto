@@ -13,6 +13,7 @@
     }
 }
 
+@media (min-width: 769px){
 nav {
     background-color: rgb(60,60,60);
     background-size: cover;
@@ -73,7 +74,7 @@ nav {
         }
     }
 }
-
+}
 @-webkit-keyframes swing-in-top-fwd {
     0% {
       -webkit-transform: rotateX(-100deg);
