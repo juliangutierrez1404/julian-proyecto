@@ -67,6 +67,10 @@
             padding: 3px 20px 3px 20px;
             background-color: rgb(60,60,60);
             
+            &:hover{
+                background-color: #04c734;
+                cursor: pointer;
+            }
             a{
                 color: rgb(197, 197, 197);
             }

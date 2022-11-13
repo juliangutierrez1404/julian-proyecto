@@ -283,6 +283,10 @@ footer .miniLogo picture img:hover {
   padding: 3px 20px 3px 20px;
   background-color: rgb(60, 60, 60);
 }
+.flexNav ul li:hover {
+  background-color: #04c734;
+  cursor: pointer;
+}
 .flexNav ul li a {
   color: rgb(197, 197, 197);
 }
